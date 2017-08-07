@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf); 
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf); 
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	font-family: Roboto-Regular;
+	max-width: 1366px;
+	height: 826px;
+	margin: auto;
+	background: url(../img/Bg.jpg) no-repeat;
+	background-size: cover; 
+	z-index: 555; !important
+}
+
+.container .header {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: flex-start;
+	z-index: 1;
+}
+
+.header .logo {
+	margin: 40px 0 0 160px;
+	z-index: 2;
+}
+
+.header .phone {
+	width: 836px;
+	height: 190px;
+	background-color: #2552ff;
+	margin-left: 90px;
+	z-index: 3;
+}
+.header .tel {
+	display: block;
+	float: left;
+	margin: 5.5rem 1rem 0 5.5rem;
+}
+.header p {
+	color: #fffefe;
+	margin-bottom: 1rem;
+}
+.header .text {
+	font: bold 1.8rem Roboto-Bold;
+	margin-top: 5.5rem;
+}
+
+.header .num {
+	font: 2.2rem "Roboto";
+	margin-left: 5.5rem;
+}
+
+.header .num span{
+	font: 2.8rem "Roboto";
+}
+/*------------------------------------------------------Carousel--------------------------------------------------------------*/
+
+section {
+	margin-left: 290px;
+	margin-top: -25px;
+}
+
+li {
+  width: 265px;
+  height: 315px;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+li:hover {
+	cursor: pointer;
+}
+li h2 {
+	padding: 0 1rem;
+  color: #000e7b;
+  font-size: 3.2rem;
+	font-family: Roboto-Medium;
+  text-align: center;
+	margin: 6rem 0 2rem 0;
+}
+li .border {
+	width: 36px;
+	margin: auto;
+ border-bottom: 3px solid #000e7b;
+	margin-bottom: 2rem;
+	
+}
+
+
+li p {
+	padding: 0 2.5rem;
+  color: #7c7c7c;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.items {
+  position: absolute;
+}
+
+.main-pos {
+  margin-left: 2em !important;
+  z-index: 3000;
+}
+
+.left-pos {
+  margin-left: -12rem !important;
+  z-index: 1000;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+}
+
+.back-pos {
+  margin-left: 2em !important;
+  opacity: .05;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+}
+
+.right-pos {
+  margin-left:  16rem !important;
+  z-index: 1000;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+}
+.right-pos h2, .right-pos .border, .right-pos p{
+  opacity: .5;
+}
+
+.back-pos h2, .back-pos .border, .back-pos p{
+  opacity: .5;
+}
+
+.left-pos h2, .left-pos .border, .left-pos p{
+  opacity: .5;
+}
+
+
+
+.main .description {
+	text-align: center;
+	padding: 0 8rem;
+	width: 520px;
+    font-size: 2.4rem;
+	font-family: Roboto-Medium;
+	color: #222e8c;
+	margin-top: 370px;
+	margin-left: 185px;
+	position: absolute;
+}
+
+.main .button {
+	background: #222e8c;
+	border-radius: 10px;
+	text-align: center;
+	width: 270px;
+	height: 60px;
+    font-size: 2.4rem;
+	color: #fff;
+	margin-top: 440px;
+	margin-left: 305px;
+	margin-bottom: 2rem;
+	border: none;
+}
+
+.main .button:hover {
+	cursor: pointer;
+}
+.main .more {
+	display: block;
+	text-decoration: none;
+	color: #7c7c7c;
+	font-size: 1.6rem;
+	margin-left: 330px;
+}
+
+
+/*----------------------------------------------------------------------------------End Carousel----------------------------------------*/
+
+@media screen and (max-width: 1366px) {
+	.header .phone {
+		width: 100%;
+		margin: 0 1rem;
+	}
+	.header .logo {
+		width: 280px;
+		margin: auto;
+	}
+	.header .phone p {
+		text-align: center;
+	}
+	.header .phone .tel {
+		position: absolute;
+		top: 70px;
+		left: 40%;
+	}
+	section {
+	  width: 320px;
+/*	  position: relative;*/
+	}
+	section {
+		margin-left: 0;
+	}
+	.main .description {
+		width: 320px;
+		margin-left: 0;
+	}
+	.main .button {
+		margin-left: calc(100vwv / 2 - 135px);
+	}
+	.main .more {
+		margin-left: 0;
+	}
+}

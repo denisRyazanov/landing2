@@ -1,5 +1,5 @@
 //slideshow style interval
-var autoSwap = setInterval( swap,4500);
+var autoSwap = setInterval( swap,6500);
 
 //pause slideshow and reinstantiate on mouseout
 $('ul, span').hover(
@@ -7,7 +7,7 @@ $('ul, span').hover(
     clearInterval(autoSwap);
 }, 
   function () {
-   autoSwap = setInterval( swap,4500);
+   autoSwap = setInterval( swap,6500);
 });
 
 //global variables
